@@ -1,0 +1,49 @@
+<html>
+<head>
+    <link rel = 'stylesheet' href='style.css'>
+    <!-- Bootstrap -->
+    <title>My Library</title>
+</head>
+<body>
+<div id="pageTitle">
+    <h1>My Library</h1>
+    <button id="addBtn" class = "open-button" onclick='openForm()'>
+        +
+    </button>
+</div>
+<div id='booksPart'>
+<div id='blankFiller'><h1 id='fillerText'>Add your first book here</h1></div>
+        <!--  vvv this is a sample div and it's display is set to none vvv -->
+            <div id ='sampleBookBox'>
+                <button id= 'removeBtn'>
+                    <img id='wastebucket' src="resources/wastebucket.png"/>
+                </button>
+                <p class='title'></p> 
+                <p class='author'></p>
+                <p class='page'></p>
+                <div class='buttonContainer'>
+                    <button id = 'decreasePage'class='bookBtn' onclick  = 'once = false;'>-</button>
+                    <button id ='increasePage' class='bookBtn' onclick = 'once = false;'>+</button>
+                    <button id ="readBtn" class='bookBtn'>Read</button>
+                </div>
+            </div>
+
+            
+    </div>
+    <div class='book-input-popup' id='myForm'>
+        <form class='form-container'>
+            <h1></h1>
+            <label for='title'><b>Add a book</b></label>
+            <input type="text" placeholder="Book title" id="title" required>
+            <input type="text" placeholder="Author name" id="author" required>
+            <input type="number" placeholder="Page you're on" id="page" required>
+            <button type='submit' class='btn' onclick='closeForm()'>Submit</button>
+            <button type='button' class='btn cancel' onclick="closeForm()">Close</button>
+            
+        </form>
+    </div>
+</body>
+<script src="script.js">
+   
+</script>
+</html>

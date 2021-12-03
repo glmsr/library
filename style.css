@@ -1,0 +1,243 @@
+html{
+    background-color: #debb01;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    height: auto;
+    width: auto;
+    margin: 0%;
+}
+h1{
+    margin-top: 50px;
+    font-size: 75px;
+    position: absolute;
+    user-select: none;
+}
+
+#pageTitle{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    height: 100vh;
+    align-items: center;
+    background-image : url('resources/books-g465e3b6eb_1920.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+/* books part */
+#booksPart{
+    display: block;
+    min-height: 100vh;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content : center;
+}
+#blankFiller{
+    display: flex;
+    height: 100vh;
+    z-index: -2;
+    align-content: flex-end;
+    justify-content: center;
+    position: absolute;
+    
+    min-width: 300px;
+}
+#fillerText{
+    align-self: center;
+    opacity: 30%;
+    user-select: none;
+}
+ #wastebucket{
+    height: 22px;
+} 
+#sampleBookBox{
+    display: none;
+    flex-direction: column;
+    min-height: 250px;
+    width : 200px;
+    padding: 1px;
+    border: 3px solid brown;
+    text-align: center;
+    font-size: 17px;
+    float: left;
+    margin: 10px;
+}
+ .bookBox{
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    width : 200px;
+    padding: 1px;
+    border: 3px solid brown;
+    text-align: center;
+    font-size: 17px;
+    float: left;
+    margin: 10px;
+}
+#title{
+    flex-grow: 1;
+}
+.buttonContainer{
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 11px;
+}
+.bookBtn {
+    display: flex;
+    width: 67px;
+    height: 30px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center; 
+    border: 3px solid black;
+    align-self: end;
+}
+.addBtn{
+    display: flex;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    right: 40px;
+    background-color: yellow;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+}
+
+#increasePage{
+    font-size: 24px;
+    
+    background-color: rgb(74, 238, 74);
+}
+#decreasePage{
+    border-radius: 20px 2px 2px 20px;
+    font-size: 24px;
+    background-color: red;
+}
+#readBtn{
+    border-radius: 2px 20px 20px 2px;
+    background-color: black;
+    color: white;
+}
+#removeBtn{
+    justify-content: center;
+    align-self: end;
+    box-shadow:inset 0px 29px 0px -24px #e67a73;
+	background-color:#e4685d;
+	border-radius:4px;
+	border:1px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:19px;
+	padding:3px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+    align-items: center;
+    
+    
+}
+/* hovers and actives */
+#removeBtn:hover{
+    background-color:#eb766e;
+}
+
+#increasePage:hover{
+    background:linear-gradient(to bottom, #def3db 5%, #00ff2a 100%);
+}
+
+#decreasePage:hover{
+    background:linear-gradient(to bottom, #f07a7a 5%, #f34040 100%);
+}
+
+#readBtn:hover{
+    background:linear-gradient(to bottom, #6d6b6b 5%, #030202 100%);
+}
+.bookBtn:active{
+    position: relative;
+    top: 1px;
+}
+
+
+/*       POPUP        */
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    display: flex;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    right: 40px;
+    background-color: yellow;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+}
+
+/* The popup form - hidden by default */
+.book-input-popup {
+  display: none;
+  position: fixed;
+  bottom: -22;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
