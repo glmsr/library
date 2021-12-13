@@ -48,7 +48,7 @@ h1{
     opacity: 30%;
     user-select: none;
 }
- #wastebucket{
+ .wastebucket{
     height: 22px;
 } 
 #sampleBookBox{
@@ -75,8 +75,17 @@ h1{
     float: left;
     margin: 10px;
 }
-#title{
-    flex-grow: 1;
+.title{
+    
+    order: 0;
+}
+.author{
+    
+    order: 0;
+}
+.page {
+    
+    order: 0;
 }
 .buttonContainer{
     display: inline-flex;
@@ -85,8 +94,9 @@ h1{
     align-content: center;
     justify-content: center;
     margin-top: 11px;
+    order: 5;
 }
-.bookBtn {
+/* #bookBtn {
     display: flex;
     width: 67px;
     height: 30px;
@@ -95,7 +105,7 @@ h1{
     align-items: center; 
     border: 3px solid black;
     align-self: end;
-}
+} */
 .addBtn{
     display: flex;
     position: fixed;
@@ -113,22 +123,46 @@ h1{
     font-size: 44px;
 }
 
-#increasePage{
+.increasePage{
+    display: flex;
+    width: 67px;
+    height: 30px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center; 
+    border: 3px solid black;
+    align-self: end;
     font-size: 24px;
-    
     background-color: rgb(74, 238, 74);
 }
-#decreasePage{
+.decreasePage{
+    display: flex;
+    width: 67px;
+    height: 30px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center; 
+    border: 3px solid black;
+    align-self: end;
     border-radius: 20px 2px 2px 20px;
     font-size: 24px;
     background-color: red;
+    
 }
-#readBtn{
+.readBtn{
+    display: flex;
+    width: 67px;
+    height: 30px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center; 
+    border: 3px solid black;
+    align-self: end;
     border-radius: 2px 20px 20px 2px;
     background-color: black;
     color: white;
 }
-#removeBtn{
+.remBtn{
     justify-content: center;
     align-self: end;
     box-shadow:inset 0px 29px 0px -24px #e67a73;
@@ -142,29 +176,28 @@ h1{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
     align-items: center;
-    
+    order: 0;
     
 }
 /* hovers and actives */
-#removeBtn:hover{
+.remBtn:hover{
     background-color:#eb766e;
 }
-
-#increasePage:hover{
+.increasePage:hover{
     background:linear-gradient(to bottom, #def3db 5%, #00ff2a 100%);
 }
 
-#decreasePage:hover{
+.decreasePage:hover{
     background:linear-gradient(to bottom, #f07a7a 5%, #f34040 100%);
 }
 
-#readBtn:hover{
+.readBtn:hover{
     background:linear-gradient(to bottom, #6d6b6b 5%, #030202 100%);
 }
-.bookBtn:active{
+/* .bookBtn:active{
     position: relative;
     top: 1px;
-}
+} */
 
 
 /*       POPUP        */
