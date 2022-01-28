@@ -1,19 +1,30 @@
 <html>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Raleway:ital,wght@0,100;1,400&display=swap');
+    </style>
     <link rel = 'stylesheet' href='style.css'>
     <!-- Bootstrap -->
     <title>My Library</title>
-</head>
-<body>
-<div id="pageTitle">
-    <h1>My Library</h1>
+    <div id="pageTitleDiv">
+    <video autoplay muted loop id ='myVideo'>
+        <source src = 'resources/video.mp4' type='video/mp4'>
+    </video>
+    <h1 id = 'title'>My Library</h1>
+
+    <h2 id = 'following'>Store information about books that you like...</h2>
+    
     <button id="addBtn" class = "open-button" onclick='openForm()'>
         +
     </button>
 </div>
+</head>
+<body>
+    
 <div id='booksPart'>
-<div id='blankFiller'><h1 id='fillerText'>Add your first book here</h1></div>
-        <!--  vvv this is a sample div and it's display is set to none vvv -->
+    <div id='blankFiller'><h1 id='fillerText'>Add your first book here</h1></div>
             <div id ='sampleBookBox'>
                 <button id= 'removeBtn' class= 'remBtn'>
                     <img class='wastebucket' src="resources/wastebucket.png"/>
@@ -46,4 +57,5 @@
 <script src="script.js">
    
 </script>
+
 </html>

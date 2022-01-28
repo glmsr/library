@@ -1,28 +1,63 @@
 html{
-    background-color: #debb01;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(41, 41, 41);
+    font-family: 'Raleway', sans-serif;
+    margin: 0%;
+    color: white;
 }
 body{
     height: auto;
     width: auto;
     margin: 0%;
+    
 }
 h1{
-    margin-top: 50px;
+    
     font-size: 75px;
     position: absolute;
     user-select: none;
 }
-
-#pageTitle{
+p{
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+}
+#pageTitleDiv{
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: 0%;
-    height: 100vh;
+    height: 119vh;
     align-items: center;
-    background-image : url('resources/books-g465e3b6eb_1920.jpg');
-    background-size: cover;
-    background-position: center bottom;
+    justify-content: center;
+    
+}
+#myVideo{
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -3;
+    
+    /* min-width: 100%;
+    min-height: 100%;   */
+    
+}
+#title {
+    
+    color: white;
+    margin-bottom: 100px;
+    font-family: 'Raleway', sans-serif;
+    top: 150;
+}
+
+
+
+#following{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin-bottom: 100px;
+    top: 270;
 }
 /* books part */
 #booksPart{
@@ -32,6 +67,7 @@ h1{
     margin-left: 10%;
     margin-right: 10%;
     justify-content : center;
+    
 }
 #blankFiller{
     display: flex;
@@ -69,11 +105,13 @@ h1{
     min-height: 250px;
     width : 200px;
     padding: 1px;
-    border: 3px solid brown;
+    border: 3px solid rgb(255, 255, 255);
     text-align: center;
     font-size: 17px;
     float: left;
     margin: 10px;
+    border-radius: 12px;
+
 }
 .title{
     
@@ -273,4 +311,52 @@ h1{
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 1144px) { 
+    #pageTitleDiv {
+        height: 100vh;
+        
+    }
+   #myVideo{
+    
+    display: flex;
+    flex-direction: column;
+    align-self : center;
+    justify-self: center;
+    width: 100%;
+    
+   }
+  }
+@media screen and (max-width: 750px){
+    #pageTitleDiv{
+        height: 70vh;
+        
+    }
+    #title{
+        top: 100;
+        margin: 0;
+    }
+    #following{
+        top: 180;
+        margin: 0;
+        position: absolute;
+        height: auto;
+    }
+}
+@media screen and (max-width: 550px){
+    #pageTitleDiv{
+        height: 45vh;
+        
+    }
+    #title{
+        top: 0;
+        margin: 0;
+    }
+    #following{
+        top: 90;
+        margin: 0;
+        position: absolute;
+        height: auto;
+    }
 }
