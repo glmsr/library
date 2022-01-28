@@ -267,8 +267,11 @@ p{
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
+  
 }
-
+#myForm{
+    color: black;
+}
 /* Add styles to the form container */
 .form-container {
   max-width: 300px;
